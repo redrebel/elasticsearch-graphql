@@ -1,0 +1,19 @@
+{
+  "name": "elasticsearch-graphql",
+  "version": "1.0.0",
+  "description": "elasticsearch-graphql is fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redrebel/elasticsearch-graphql.git"
+  },
+  "author": "red",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redrebel/elasticsearch-graphql/issues"
+  },
+  "homepage": "https://github.com/redrebel/elasticsearch-graphql#readme"
+}
