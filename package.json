@@ -4,7 +4,8 @@
   "description": "elasticsearch-graphql is fun",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,18 @@
   "bugs": {
     "url": "https://github.com/redrebel/elasticsearch-graphql/issues"
   },
-  "homepage": "https://github.com/redrebel/elasticsearch-graphql#readme"
+  "homepage": "https://github.com/redrebel/elasticsearch-graphql#readme",
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.8.0",
+    "dotenv": "^8.2.0",
+    "graphql-tools": "^6.0.15",
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "nodemon": "^2.0.4"
+  }
 }
