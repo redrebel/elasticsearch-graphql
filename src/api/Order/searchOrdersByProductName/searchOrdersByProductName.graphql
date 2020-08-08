@@ -1,0 +1,7 @@
+type Query {
+  searchOrdersByProductName(
+    searchKeyword: String
+    pageSize: Int 
+    pageIndex: Int
+  ): SearchOrderResult
+}

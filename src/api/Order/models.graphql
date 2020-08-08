@@ -58,3 +58,19 @@ type Order {
   customer_birth_date: String
   email: String
 }
+
+type OrderCountByDayOfWeek {
+  Sunday: Int
+  Monday: Int
+  Tuesday: Int
+  Wednesday: Int
+  Thursday: Int
+  Friday: Int
+  Saturday: Int
+}
+
+type SearchOrderResult {
+  total: Int
+  orderCountByDayOfWeek: OrderCountByDayOfWeek 
+  orders: [Order]
+}
