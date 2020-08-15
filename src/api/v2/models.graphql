@@ -1,0 +1,9 @@
+type Order {
+  id: String
+  user_id: String
+  product_id: String
+  day_of_week: String
+  order_data: String
+  currency: String
+  taxful_total_price: String
+}
