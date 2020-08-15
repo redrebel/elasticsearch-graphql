@@ -2,15 +2,15 @@ import { Client } from "@elastic/elasticsearch";
 
 export default {
   Query: {
-    getProducts: async (_, args) => {
+    getCustomers: async (_, args) => {
       let client = null;
       let searchResult = null;
       let hits = null;
 
-      let Products = null;
+      let Customers = null;
 
       try {
-        Products = new Array();
+        Customers = new Array();
 
         client = new Client({
           node: { url: new URL(process.env.ES_ENDPOINT) },
@@ -21,7 +21,7 @@ export default {
         });
 
         searchResult = await client.search({
-          index: "product",
+          index: "customer",
           body: {
             query: {
               match_all: {},
@@ -33,12 +33,12 @@ export default {
         console.log(hits);
 
         for (let hit of hits) {
-          Products.push(hit._source);
+          Customers.push(hit._source);
         }
       } catch (e) {
-        console.log("getProducts exception: " + e);
+        console.log("getCustomers exception: " + e);
       }
-      return Products;
+      return Customers;
     },
   },
 };

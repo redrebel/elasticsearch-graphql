@@ -7,3 +7,17 @@ type Order {
   currency: String
   taxful_total_price: String
 }
+
+type Customer {
+  id: String
+  user_id: String
+  customer_full_name: String
+  customer_gender: String
+}
+
+type Product {
+  id: String
+  product_name: String
+  price: String
+  taxful_total_price: String
+}
