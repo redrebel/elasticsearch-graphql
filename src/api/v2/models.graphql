@@ -6,6 +6,8 @@ type Order {
   order_data: String
   currency: String
   taxful_total_price: String
+  products: [Product]
+  customers: [Customer]
 }
 
 type Customer {
@@ -13,6 +15,7 @@ type Customer {
   user_id: String
   customer_full_name: String
   customer_gender: String
+  orders: [Order]
 }
 
 type Product {
@@ -20,4 +23,5 @@ type Product {
   product_name: String
   price: String
   taxful_total_price: String
+  orders: [Order]
 }
